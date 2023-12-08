@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>برنامه بودجه هفتگی</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class=" h-12/12 w-12/12">
+    <main class="W-10/12">
+        <h1 class="text-center text-4xl text-white mt-10">برنامه بودجه بندی هفتگی</h1>
+        <div class="lg:w-9/12 w-10/12 h-12/12 border-2 border-blue-300 bg-blue-100 mx-auto rounded-xl mt-10">
+
+            <div class="flex flex-row-reverse mx-10 flex justify-between mx-auto w-10/12">
+                <section class="flex flex-col py-12 text-right w-6/12 text-lg section1">
+
+                    <h1 class="text-purple-700 md:text-xl text-rm mb-4">...هزینه هارو اینجا اضافه کن</h1>
+                    <form action="" class="py-2">
+                        <div class="py-2">
+                            <p>:اسم</p>
+                            <input
+                                class="py-1 my-2 pr-4 pl-2 text-right border-2 border-green-200 rounded-xl w-10/12 name"
+                                type="text">
+                        </div>
+                        <div class="py-2">
+                            <p>:قیمت به تومان</p>
+                            <input
+                                class="py-1 my-2 pr-4 pl-2 text-right border-2 border-green-200 rounded-xl w-10/12 price"
+                                type="number">
+                        </div>
+                        <button class="py-2 border px-4 mt-5 rounded-lg bg-blue-600">اضافه کردن</button>
+
+                    </form>
+
+                </section>
+                <section class="flex flex-col py-12 text-right md:w-6/12 w-5/12 text-lg">
+                    <p class="text-purple-700 md:text-xl text-rm mb-8">لیست هزینه ها</p>
+                    <div class="addList w-12/12 flex flex-col "></div>
+
+                    <div class="border px-3 mt-5 py-3 bg-purple-300 rounded-xl mb-1 mt-10">
+                        <p>بودجه هفته:<span class="budgeWeek"></span>تومان</p>
+                    </div>
+                    <div class="border px-3 my-5 py-3 rounded-xl bg-green-300 ">
+                        <p>باقی مانده: <span class="remaining"></span>تومان</p>
+                    </div>
+
+                </section>
+
+            </div>
+        </div>
+    </main>
+    <script src="./app.js"></script>
+</body>
+
+</html>
